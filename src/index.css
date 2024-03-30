@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+@layer components {
+  .container {
+    @apply max-w-full w-[1440px] px-5 mx-auto;
+  }
+
+  .btn {
+    @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
+  }
+
+  .heading {
+    @apply text-[40px] leading-[54px] font-[900] text-primaryColor;
+  }
+
+  .text-para {
+    @apply text-[14px] leading-[30px] font-[400] text-textColor mt-[18px];
+  }
+
+  .hero-section {
+    @apply bg-[url('./assets/images/Vector.png')] bg-no-repeat bg-left bg-contain;
+  }
+
+  .about-section {
+    @apply bg-[url('./assets/images/Rectangle-1.png')] bg-no-repeat bg-center bg-cover;
+  }
+
+  .container-1 {
+    @apply px-5 mx-auto bg-[url('./assets/images/Vector-1.png')] bg-no-repeat bg-right bg-contain;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    background-position: center;
+    background-size: cover;
+  }
+  .hero-text p {
+    font-size: 40px;
+  }
+  .hero-text p.text-para {
+    font-size: 15px;
+  }
+
+  .about-section h1 {
+    font-size: 44px;
+    padding-top: 30px;
+  }
+  .about-section p {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .where {
+    margin-top: 60px;
+  }
+
+  .test-cards {
+    width: 100%;
+  }
+  .col-1 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .cont-form {
+    width: 100%;
+  }
+  .contactInfo {
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    background-position: center;
+    background-size: cover;
+  }
+  .hero-text p {
+    font-size: 65px;
+  }
+  .hero-text p.text-para {
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .about-section h1 {
+    font-size: 44px;
+    padding-top: 30px;
+  }
+  .about-section p {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .aboutUs {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .aboutUs img {
+    width: 100%;
+  }
+  .container-1 {
+    background-size: 0;
+  }
+  .where {
+    margin-top: 60px;
+  }
+
+  .card-width {
+    width: 70%;
+    margin: auto;
+  }
+
+  .col-1 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .test-cards {
+    flex-direction: column;
+  }
+
+  .cont-form {
+    width: 70%;
+  }
+  .contactInfo {
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-section {
+    background-position: center;
+    background-size: cover;
+  }
+  .hero-text p {
+    font-size: 65px;
+  }
+  .hero-text p.text-para {
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .container-1 {
+    background-size: 0;
+  }
+
+  .test-cards {
+    width: 100%;
+  }
+
+  .contactInfo {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container-1 {
+    background-size: 0;
+  }
+}
